@@ -6,7 +6,7 @@ Base Model used : RVT   https://github.com/uzh-rpg/RVT
 
 To use the code in this repository, clone the RVT model and download the MOD-DSEC dataset.
 
-**Objective**
+**Objective** :
 Data preprocessing from MOD-DSEC dataset into RVT compatible dataset.
 The RGB part of the dataset is used in a RGB-based object detection model for RGB-based prediction.
 the RGB inference is used in the Priming process to enhance the event-representations
