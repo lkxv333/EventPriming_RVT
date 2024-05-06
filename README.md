@@ -14,9 +14,9 @@ Apply this to get the bounding box and classification of the RGB frames of the M
 2. Preprocessing
 Use the 'rectify_preprocess.py' to prepare the MOD-DSEC dataset by transforming into a form that the RVT model expects.
 This step consist of three main components
-  1. resizing of events frame to match the RVT input size
-  2. event rectification for better alignment
-  3. creating labels, objframe timesteps and other representations required for RVT.
+   - resizing of events frame to match the RVT input size
+   - event rectification for better alignment
+   - creating labels, objframe timesteps and other representations required for RVT.
 Make sure to check the paths are assigned correctly.
 
 3. Priming
