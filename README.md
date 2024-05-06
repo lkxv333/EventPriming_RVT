@@ -2,6 +2,7 @@
 Priming events by background filtering with bbox cues from RGB inference
 
 Dataset used : MOD-DSEC https://github.com/ZZY-Zhou/RENet?tab=readme-ov-file
+
 Base Model used : RVT   https://github.com/uzh-rpg/RVT
 
 To use the code in this repository, clone the RVT model and download the MOD-DSEC dataset.
