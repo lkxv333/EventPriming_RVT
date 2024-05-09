@@ -65,9 +65,10 @@ def process_frames(frame_dir, bbox_data, events_path, detection_path, output_vid
         video_out.write(frame)
 
     video_out.release()
+
+
 # Define paths and parameters
 sequence_name = 'zurich_city_01_e'
-
 
 base = r"C:\Users\lkxv3\OneDrive - National University of Singapore\DSEC\DSEC_MOD\training"
 base_dir = os.path.join(base, sequence_name)
@@ -87,9 +88,10 @@ use_rgb=True
 use_events=True
 use_detections=True
 draw_label_bbox=True
+confidence_threshold = 0.8
 
 # Process the frames
-process_frames(frame_dir, bbox_data, events_path, detection_path, output_video_path, use_rgb, use_events, use_detections, draw_label_bbox, confidence_threshold=0.8)
+process_frames(frame_dir, bbox_data, events_path, detection_path, output_video_path, use_rgb, use_events, use_detections, draw_label_bbox, confidence_threshold)
 
 time2 = time.time()
 print('Time taken:', time2-time1)
