@@ -6,6 +6,7 @@ Dataset used : MOD-DSEC https://github.com/ZZY-Zhou/RENet?tab=readme-ov-file
 Base Model used : RVT   https://github.com/uzh-rpg/RVT
 
 To use the code in this repository, clone the RVT model and download the MOD-DSEC dataset.
+After applying codes in this repo, run RVT evaluation as instructed in the repo.
 
 **Objective** :
 Data preprocessing from MOD-DSEC dataset into RVT compatible dataset.
@@ -43,7 +44,8 @@ The preprocessed sequences from preprocessing step should be used in this part.
 **4. Evaluation**
 
 Use the RVT model evaluation code on the primed events.
-The RVT model do not produce sequence by sequency detection output. For visualisation of the predictions, use the 'coco_eval.py' from this repository
+The RVT model do not produce sequence by sequency detection output. For visualisation of the predictions, use the 'coco_eval.py' from this repository.
+Replace the 'coco_eval.py' from the RVT repo to the one in this repo before running evalutaion.
 This version is adjusted one that creates a detection.py file which contains the predictions from the RVT model when RVT evaluation.py is ran.
 Also additional metrics by each class is added in this version.
 
@@ -54,7 +56,7 @@ Also additional metrics by each class is added in this version.
 **5. Visualisation**
 
 Use choice_visual.py to create a visualisation video for a selected sequence.
-You may adjust the parameters for which to be included in the video among rgb, events, detection and label.
+You may adjust the parameters for which to be included in the video among rgb, events, detection, label and confidence_threshold.
 
 
 **Caution**
